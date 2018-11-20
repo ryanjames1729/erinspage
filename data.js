@@ -15,9 +15,8 @@ function writeToForm() {
       "entry.596617604": email
     },
     type: "POST",
-    dataType: "json",
+    dataType: "jsonp",
     cache: false,
-    async: false,
     statusCode: {
       0: function() {
           //Success message
