@@ -1,0 +1,31 @@
+header {
+  background-color: #E0F2E9;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #62A8AC;
+}
+
+main {
+  flex: 1 0 auto;
+  background-color: #62A8AC;
+}
+
+footer {
+  background-color: black;
+}
+
+.parallax{
+  position: static;
+}
+
+/* Colors:
+ * #A1D2CE
+ * #78CAD2
+ * #62A8AC
+ * #5497A7
+ * #50858B
+ */
