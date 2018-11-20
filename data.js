@@ -5,9 +5,8 @@ function writeToForm() {
 
   console.log("Pulled information: " + first_name + ", " + last_name + ", " + email);
 
-  //signUpChange();
   $.ajax({
-    url: "https://goo.gl/forms/m1S1J8IJzOJqyGpt1",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfhgB5L9q21RXl3HWr2jRJHI5DgBNuRf4M_jTG_6uN0Ev9y7w/formResponse",
       //https://docs.google.com/forms/d/e/1FAIpQLSerArjIG51KGDAZwlKdl9ySuQBWBvf5Sv3y626QC6uBXWm2vw/formResponse
     data: {
       "entry.196738818": first_name,
