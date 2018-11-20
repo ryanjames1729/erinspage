@@ -4,6 +4,9 @@ function writeToForm() {
   var email = $('#email').val();
 
   console.log("Pulled information: " + first_name + ", " + last_name + ", " + email);
+  $('#first_name').val('');
+  $('#last_name').val('');
+  $('#email').val('');
 
   $.ajax({
     url: "https://docs.google.com/forms/d/e/1FAIpQLSfhgB5L9q21RXl3HWr2jRJHI5DgBNuRf4M_jTG_6uN0Ev9y7w/formResponse",
