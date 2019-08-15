@@ -1,5 +1,5 @@
 header {
-  background-color: #E0F2E9;
+  background-color: #D5EABB;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  background-color: #D5EABB;
+  background-color: rgb(107, 107, 107);
 }
 
 footer {
