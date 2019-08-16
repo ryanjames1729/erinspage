@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://materializecss.com/templates/parallax-template/css/style.css">
     <!--Import custom CSS-->
     <link rel="stylesheet" href="style.css">
+    <!--Import Font-->
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Josefin+Sans&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://materializecss.com/dist/js/materialize.js"></script>
     <script src="data.js"></script>
@@ -26,6 +28,7 @@
       <div class="nav-wrapper" style="background-color: #F3F9D2">
         <ul class="right" style="padding-right: 10px"><strong><a href="/">Home</a><strong></ul>
         <ul class="left"><a href="#my-yoga-practice" id="my-yoga-practice-nav">My Yoga Practice</a></ul>
+        <ul class="left"><a href="#contact-me" id="contact-me-nav">Contact Me</a></ul>
       </div>
     </nav>
   </header>
@@ -33,7 +36,7 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <h1 class="header center teal-text text-lighten-2">Erin Does Yoga</h1>
+        <h1 class="header center black-text" style="font-family: 'Beth Ellen', cursive;">Erin Does Yoga</h1>
       </div>
     </div>
     <div class="parallax"><img src="India 1.jpg" alt=""></div>
@@ -55,7 +58,7 @@
       </div>
     </div>
   </div>
-
+  <!--My Yoga Practice-->
   <div class="scroll" id="my-yoga-practice" style="display:none">
     <div class="row valign-wrapper">
       <div class="card col s10 offset-s1 valign" style="background-color:#F3F9D2">
@@ -63,7 +66,9 @@
           <div class="mask"></div>
         </div>
         <div class="card-body">
-          <h4 class="card-text" style="font-size: 24px"><b>My Yoga</b></h4><a href="#" id="my-yoga-practice-close"><i class="material-icons right">close</i></a></span>
+            <a href="#" id="my-yoga-practice-close"><i class="material-icons right">close</i></a><br>
+          <div class="card-image"><div class="col s2 m2"></div><img src="Erin - India 2.jpg" style="height: 70%; width: 70%"><div class="col s12 m2"></div></div><br>
+          <h4 class="card-text" style="font-size: 24px"><b>My Yoga</b></h4>
           <p class="card-footer:last-child" style="text-align: left; font-size: 16px">
             My journey with yoga began several years ago. After attending my first class, I knew that yoga would be in my life forever. 
             Finally, I had found something that clicked with me immediately. 
@@ -81,17 +86,17 @@
    </div>
 
   <!--Mailing List-->
-  <div class="row">
+  <div class="row" id="contact-me">
     <div class="col s12">
       <div class="row">
         <div class="col s2 m3"></div>
         <div class="col s8 m6 card" style="background-color: #F3F9D2"> 
           <div class="center">
-            <span class="card-title grey-text text-darken-4">Mailing List</span>
+            <span class="card-title grey-text text-darken-4">Join My Mailing List</span>
           </div>
           <div class="card-image waves-effect waves-block waves-light"><div class="col s2 m2"></div><img class="activator" src="Erin - India 1.jpg" style="height: 70%; width: 70%"><div class="col s12 m2"></div></div><br>
           <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4 center">Mailing List<i class="material-icons right">close</i></span>
+            <span class="card-title grey-text text-darken-4 center">Join My Mailing List<i class="material-icons right">close</i></span>
             <div class="col s12 m4 align-left">
               Enter your information. We'll take care of the rest and send you some info to get started!
             </div>
