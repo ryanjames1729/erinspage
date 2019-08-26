@@ -24,12 +24,15 @@
     </head>
 <body>
   <header>
-    <nav class="navbar-fixed" style="background-color: rgba(00, 00, 00, 00)">
-      <div class="nav-wrapper">
-        <ul class="right" style="padding-right: 10px"><strong><a href="/">Home</a><strong></ul>
-        <ul class="left"><a href="#my-yoga-practice" id="my-yoga-practice-nav">My Yoga Practice</a></ul>
-        <ul class="left"><a href="#contact-me" id="contact-me-nav">Contact Me</a></ul>
-      </div>
+     <nav>      
+        <ul class="right" style="padding-right: 10px;"><strong><a href="/">Home</a><strong></ul>
+        <ul class="left hide-on-med-and-down"><a href="#my-yoga-practice" id="my-yoga-practice-nav">My Practice</a></ul>
+        <ul class="left hide-on-med-and-down"><a href="#contact-me" id="contact-me-nav">Contact Me</a></ul>    
+        <ul class="left hide-on-med-and-down"><a href="#schedule" id="schedule-nav">Schedule</a></ul>   
+
+        <ul class="left show-on-med-and-down hide-on-large-only"><a href="#my-yoga-practice">My Yoga</a></ul>
+        <ul class="left show-on-med-and-down hide-on-large-only"><a href="#contact-me">Contact</a></ul>  
+        <ul class="left show-on-med-and-down hide-on-large-only"><a href="#schedule" id="schedule-nav">Schedule</a></ul>     
     </nav>
   </header>
 
@@ -59,7 +62,7 @@
     </div>
   </div>
   <!--My Yoga Practice-->
-  <div class="scroll" id="my-yoga-practice" style="display:none">
+  <div class="scroll" id="my-yoga-practice" style="display:none; padding-top: 60px; margin-top: -60px;">
     <div class="row valign-wrapper">
       <div class="card col s10 offset-s1 valign" style="background-color:#F3F9D2">
         <div class="view overlay hm-white-slight">
@@ -85,8 +88,34 @@
      </div>
    </div>
 
+  <!--Schedule-->
+  <div class="scroll" id="schedule" style="padding-top: 60px; margin-top: -60px;">
+      <div class="row">
+        <div class="col s2 m3"></div>
+        <div class="card col s8 m6" style="background-color:#F3F9D2">
+          <div class="view overlay hm-white-slight">
+            <div class="mask"></div>
+          </div>
+          <div class="center">
+              <span class="card-title grey-text text-darken-4">My Schedule</span>
+            </div>
+          <div class="card-body">            
+            <h4 class="light" style="font-size: 24px"><b>Thursday, 8/29/19</b></h4>
+            <p class="light" style="text-align: left; font-size: 16px">
+              Hoover High School<br>Teacher and Staff
+            </p>
+            <div class="divider"></div>
+            <p class="light" style="text-align: left; font-size: 16px">
+              *Contact me for availability if a class does not fit your schedule.
+             </p>
+             
+           </div>
+         </div>
+       </div>
+     </div>
+
   <!--Mailing List-->
-  <div class="row" id="contact-me">
+  <div class="row" id="contact-me" style="padding-top: 60px; margin-top: -60px;">
     <div class="col s12">
       <div class="row">
         <div class="col s2 m3"></div>
@@ -136,6 +165,11 @@
             </ul>
           </div>
         </div>
+        <div class="row">
+          <div class="col s12 center">
+              “Yoga allows you to rediscover a sense of wholeness in your life, where you do not feel like you are constantly trying to fit broken pieces together.”  B.K.S. Iyengar
+          </div>
+        </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
@@ -144,8 +178,14 @@
       </div>
     </footer>
 
+
+
+
     <script type="text/javascript">
       $(document).ready(function(){
+        // Init Sidenav
+ 
+
         $("#my-yoga-practice-nav").click(function(){
           $("#my-yoga-practice").fadeIn("30000");
           });
@@ -157,12 +197,36 @@
       (function($){
         $(function(){
 
-          $('.sidenav').sidenav();
+
           $('.parallax').parallax();
+
+          
 
         }); // end of document ready
       })(jQuery); // end of jQuery name space
 
     </script>
+          <script>
+            $(document).ready(function(){
+              // Init Carousel
+              $('.carousel').carousel();
+    
+              // Init Carousel Slider
+              $('.carousel.carousel-slider').carousel({fullWidth:true});
+    
+              // Fire off toast
+              //Materialize.toast('Hello World', 3000);
+    
+              // Init Slider
+              $('.slider').slider();
+    
+              // Init Modal
+              $('.modal').modal();
+    
+              
+              
+            });
+          </script>
+    
   </body>
 </html>

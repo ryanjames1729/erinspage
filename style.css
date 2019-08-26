@@ -1,5 +1,11 @@
-header {
-  background-color: #D5EABB;
+
+
+nav {
+  position: fixed; 
+  background-color: rgba(0,0,0,0.35); 
+  overflow: hidden;
+  z-index: 2;
+  color: #EEEEEE;
 }
 
 body {
@@ -11,7 +17,7 @@ body {
 
 main {
   flex: 1 0 auto;
-  background-color: rgb(107, 107, 107);
+  /* background-color: rgb(107, 107, 107); */
 }
 
 footer {
