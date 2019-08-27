@@ -30,7 +30,7 @@
         <ul class="left hide-on-med-and-down"><a href="#contact-me" id="contact-me-nav">Contact Me</a></ul>    
         <ul class="left hide-on-med-and-down"><a href="#schedule" id="schedule-nav">Schedule</a></ul>   
 
-        <ul class="left show-on-med-and-down hide-on-large-only"><a href="#my-yoga-practice">My Yoga</a></ul>
+        <ul class="left show-on-med-and-down hide-on-large-only"><a href="#my-yoga-practice" id="my-yoga-practice-nav-mobile">My Yoga</a></ul>
         <ul class="left show-on-med-and-down hide-on-large-only"><a href="#contact-me">Contact</a></ul>  
         <ul class="left show-on-med-and-down hide-on-large-only"><a href="#schedule" id="schedule-nav">Schedule</a></ul>     
     </nav>
@@ -192,7 +192,17 @@
           $("#my-yoga-practice-close").click(function(){
             $("#my-yoga-practice").fadeOut("30000");
             });
+        
+
+        $("#my-yoga-practice-nav-mobile").click(function(){
+          $("#my-yoga-practice").fadeIn("30000");
+          });
+          $("#my-yoga-practice-close").click(function(){
+            $("#my-yoga-practice").fadeOut("30000");
+            });
         });
+
+        
 
       (function($){
         $(function(){
